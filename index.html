@@ -4,11 +4,13 @@
         <meta charset="utf-8"/>
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, target-densitydpi=device-dpi" />
         
-        <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css" />
         <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
 
-        <script src="js/app.js"></script>
-        <script src="js/bootstrap.js"></script>
+        <script src="bootstrap/js/bootstrap.js"></script>
+        <script src="js/jquery-3.2.1.js"></script> 
+        <script src="js/index.js"></script>
 
         <title>JustCreate</title>
     </head>
@@ -17,19 +19,36 @@
 
         <div class="viewCo">
             <div class="row">
-                <button id="btnConnecter" class="btn btn-default">Se connecter</button>
+                <button id="btnConnecter" class="btn btn-default" onclick="showDiv()">Se connecter</button>
             </div>
+
             <div class="row">
-                <a href="#">Ou s'inscrire</a>
-             </div>
-            <div class="row">
-                <button id="btnConnecterFB" class="btn btn-default">Se connecter via Facebook</button>
+                <a href="Creation_Profil">Ou s'inscrire</a>
             </div>
-            <div class="row">
-                <button id="btnConnecterG" class="btn btn-default">Se connecter via Google +</button>
+
+            <div id="divSeConnecter" class="form-group" style="display: none">
+                <div class="row">
+                    <input type="text" id="pseudo" class="form-control" placeholder="Pseudo ou email"/>
+                </div>
+                <div class="row">
+                    <input type="password" id="pwd" class="form-control" placeholder="Mot de passe"/>
+                </div>
+                <div class="">
+                    <a href="#" onclick="cancelConnection();"><span style="color:red;" class="glyphicon glyphicon-remove"></span></a>
+                    <a href="html/GalerieA.html'"><span style="color:green;" class="glyphicon glyphicon-ok"></span></a>
+                </div>
             </div>
-            <div class="row">
-                <button id="btnVisiteur" class="btn btn-default">Voulez-vous visiter ?</button>
+
+            <div id="divOther">
+                <div class="row">
+                    <button id="btnConnecterFB" class="btn btn-default" onclick="window.location.href='html/GalerieA.html';">Se connecter via Facebook</button>
+                </div>
+                <div class="row">
+                    <button id="btnConnecterG" class="btn btn-default" onclick="window.location.href='html/GalerieA.html';">Se connecter via Google +</button>
+                </div>
+                <div class="row">
+                    <button id="btnVisiteur" class="btn btn-default" onclick="window.location.href='html/GalerieV.html';">Voulez-vous visiter ?</button>
+                </div>
             </div>
         </div>
     </body>
