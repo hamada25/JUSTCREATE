@@ -5,24 +5,27 @@
     text-align: center;
     margin-bottom: 10px;
 }
-.titre{
+.title {
+    color: #A9A9A9;
     font-size: 25px;
+    vertical-align: middle;
+    text-align: center;
 }
 /*POUR PLACER UN ELEMENT A DROITE*/
-.IconeRight {
+.iconeRight {
     text-align: right;
     float: right;
     margin-right: 10px;
     margin-top: 3px;
 }
 /*POUR PLACER UN ELEMENT A GAUCHE*/
-.IconeLeft {
+.iconeLeft {
     text-align: left;
     float: left;
     margin-left: 10px;
     margin-top: 3px;
 }
-.BtnEnregistrer{
+.btnEnregistrer{
     background-color: #FF961E;
     bottom: 0;
     left: 0;
@@ -31,8 +34,9 @@
     padding:10px;
     color: #FFF;
     margin-right: 5px;
+    font-size:18px;
 }
-.BtnEnregistrerPublier{
+.btnEnregistrerPublier{
     background-color: #FF961E;
     bottom: 0;
     right:0;
@@ -41,6 +45,7 @@
     padding:10px;
     color: #FFF;
     margin-left: 5px;
+    font-size:18px;
 }
 a{
     color: #777;

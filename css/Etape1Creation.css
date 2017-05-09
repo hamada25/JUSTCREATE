@@ -1,10 +1,10 @@
-.FormAjoutCreation{
+.formAjoutCreation{
 	text-align: center;
 	color: #777;
 	margin-top: 80px;
 	margin-bottom: 20px;
 }
-.BtnContinuer{
+.btnContinuer{
 	background-color: #FF961E;
 	bottom: 0;
 	position: fixed;
@@ -19,18 +19,21 @@
     text-align: center;
     margin-bottom: 10px;
 }
-.titre{
+.title {
+    color: #A9A9A9;
     font-size: 25px;
+    vertical-align: middle;
+    text-align: center;
 }
 /*POUR PLACER UN ELEMENT A DROITE*/
-.IconeRight {
+.iconeRight {
     text-align: right;
     float: right;
     margin-right: 10px;
     margin-top: 3px;
 }
 /*POUR PLACER UN ELEMENT A GAUCHE*/
-.IconeLeft {
+.iconeLeft {
     text-align: left;
     float: left;
     margin-left: 10px;

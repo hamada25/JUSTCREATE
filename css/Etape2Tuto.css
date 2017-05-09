@@ -10,7 +10,7 @@
 	box-shadow: 0px 5px 5px #656565;
 	font-size: 16px;
 }
-.BtnContinuer{
+.btnContinuer{
 	background-color: #FF961E;
 	bottom: 0;
 	position: fixed;
@@ -29,14 +29,14 @@
     font-size: 25px;
 }
 /*POUR PLACER UN ELEMENT A DROITE*/
-.IconeRight {
+.iconeRight {
     text-align: right;
     float: right;
     margin-right: 10px;
     margin-top: 3px;
 }
 /*POUR PLACER UN ELEMENT A GAUCHE*/
-.IconeLeft {
+.iconeLeft {
     text-align: left;
     float: left;
     margin-left: 10px;

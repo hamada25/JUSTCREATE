@@ -9,20 +9,20 @@
     font-size: 25px;
 }
 /*POUR PLACER UN ELEMENT A DROITE*/
-.IconeRight {
+.iconeRight {
     text-align: right;
     float: right;
     margin-right: 10px;
     margin-top: 3px;
 }
 /*POUR PLACER UN ELEMENT A GAUCHE*/
-.IconeLeft {
+.iconeLeft {
     text-align: left;
     float: left;
     margin-left: 10px;
     margin-top: 3px;
 }
-.BtnAudio{
+.btnAudio{
     background-color: #FF961E;
     position: relative;
     text-align: center;

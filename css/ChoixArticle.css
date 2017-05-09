@@ -15,20 +15,26 @@
     text-align: center;
     margin-bottom: 10px;
 }
-.titre{
-    font-size: 25px;
-}/*POUR PLACER UN ELEMENT A DROITE*/
-.IconeRight {
+/*POUR PLACER UN ELEMENT A DROITE*/
+.iconeRight {
     text-align: right;
     float: right;
-    margin:10px;
+    margin-right: 10px;
+    margin-top: 3px;
 }
 /*POUR PLACER UN ELEMENT A GAUCHE*/
-.IconeLeft {
+.iconeLeft {
     text-align: left;
     float: left;
-    margin: 10px;
+    margin-left: 10px;
+    margin-top: 3px;
 }
 a{
     color: #777;
+}
+.title {
+    color: #A9A9A9;
+    font-size: 25px;
+    vertical-align: middle;
+    text-align: center;
 }
