@@ -1,14 +1,14 @@
 function changerClass(id, affichage)
 {
-	document.getElementById('tri1').classList.remove('border');
-	document.getElementById('tri2').classList.remove('border');
-	document.getElementById('tri3').classList.remove('border');
-	
-	document.getElementById('affichage1').classList.add('hidden');
-	document.getElementById('affichage2').classList.add('hidden');
-	document.getElementById('affichage3').classList.add('hidden');
+	$("#tri1").removeClass('border');
+	$("#tri2").removeClass('border');
+	$("#tri3").removeClass('border');
 
-	document.getElementById(id).classList.add('border');
+	$("#affichage1").addClass('hidden');
+	$("#affichage2").addClass('hidden');
+	$("#affichage3").addClass('hidden');
 
-	document.getElementById(affichage).classList.remove('hidden');
+	$('#'+id).addClass("border");
+
+	$('#'+affichage).removeClass("hidden");
 }

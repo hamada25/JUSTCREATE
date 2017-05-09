@@ -24,6 +24,7 @@
     font-size: 20px;
     text-align: center;
     margin-bottom: 10px;
+    margin-top: 3px;
 }
 .titre{
     font-size: 25px;
@@ -32,13 +33,14 @@
 .IconeRight {
     text-align: right;
     float: right;
-    margin:10px;
+    margin-right: 10px;
+    margin-top: 3px;
 }
 /*POUR PLACER UN ELEMENT A GAUCHE*/
 .IconeLeft {
     text-align: left;
     float: left;
-    margin: 10px;
+    margin-left: 10px;
 }
 a{
     color: #777;
