@@ -22,25 +22,25 @@
                 <rect x="0" y="0" width="272" height="160" style="fill:#FFB049;fill-opacity:1" />
             </svg>
              <section class="container">
-                <div class="row">
-                    <label><img src="../images/profil.png" alt="Menu" height="35" width="35" i class="IconeLeft"/>Mon profil</label>
+                <div id="profil" class="row">
+                    <label><img src="../images/profil.png" alt="Menu" height="35" width="35" class="IconeLeft"/>Mon profil</label>
                 </div>
-                <div class="row">
-                    <label><img src="../images/ttscreations.png" alt="Menu" height="35" width="35" i class="IconeLeft"/>Toutes mes créations</label>
+                <div id="profil" class="row">
+                    <label><img src="../images/ttscreations.png" alt="Menu" height="35" width="35" class="IconeLeft"/>Toutes mes créations</label>
                 </div>
-                <div class="row">
-                    <label><img src="../images/atelier.png" alt="Menu" height="35" width="35" i class="IconeLeft"/>Mon atelier tuto</label>
+                <div id="atelier_tuto" class="row">
+                    <label><img src="../images/atelier.png" alt="Menu" height="35" width="35" class="IconeLeft"/>Mon atelier tuto</label>
                 </div>
-                <div class="row">
-                    <label><img src="../images/messagerie.png" alt="Menu" height="35" width="35" i class="IconeLeft"/>Ma messagerie</label>
+                <div id="messagerie" class="row">
+                    <label><img src="../images/messagerie.png" alt="Menu" height="35" width="35" class="IconeLeft"/>Ma messagerie</label>
                 </div>
-                <div class="row">
-                    <label><img src="../images/coeur.png" alt="Menu" height="35" width="35" i class="IconeLeft"/>Mes coups de coeur</label>
+                <div id="coup_coeur" class="row">
+                    <label><img src="../images/coeur.png" alt="Menu" height="35" width="35" class="IconeLeft"/>Mes coups de coeur</label>
                 </div>
-                <div class="row">
-                    <label><img src="../images/parametres.png" alt="Menu" height="35" width="35" i class="IconeLeft"/>Paramètres</label>
+                <div id="parametre" class="row">
+                    <label><img src="../images/parametres.png" alt="Menu" height="35" width="35" class="IconeLeft"/>Paramètres</label>
                 </div>
-                <div class="row">
+                <div id="deconnection" class="row">
                     <button id="btnDeco" class="btn btn-default" onclick="window.location.href='../index.html'">Me déconnecter</button>
                 </div>
             </section>
@@ -48,11 +48,11 @@
 
         <!--theme des icones menu, mail, barre de recherche, titre... -->
         <section data-role="header">
-            <div class="row">
-                <a href="#menu"><img src="../images/menu.png" alt="Menu" height="35" width="35" i class="IconeLeft"/></a>
-                <span class="title">JustCreate</span>
-                <a href="#"><img src="../images/rechercher.png" height="35" width="35" i class="IconeRight"/></a>
-                <a href="#"><img src="../images/messagerie.png" height="35" width="35" i class="IconeRight"/></a>
+            <div class="row center">
+                <a href="#menu"><img src="../images/menu.png" alt="Menu" height="35" width="35" class="IconeLeft"/></a>
+                <span class="title" onclick="window.location.href='../html/GalerieA.html';">JustCreate</span>
+                <a href="#"><img src="../images/rechercher.png" height="35" width="35" class="IconeRight"/></a>
+                <a href="#"><img src="../images/messagerie.png" height="35" width="35" class="IconeRight"/></a>
             </div>
             <!-- Barre de recherche -->
             <form role="form"> 
@@ -80,7 +80,7 @@
         </section>
 
         <section data-role="footer">
-            <button class="btn btn-default">Promouvoir votre création</button>
+            <button onclick="window.location.href='../html/ChoixArticle.html'" class="btn btn-default">Promouvoir votre création</button>
         </section>
     </body>
  </html>
