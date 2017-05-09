@@ -2,8 +2,9 @@
 .title {
 	color: #A9A9A9;
 	font-size: 25px;
-	margin-left: 25%;
+	/*margin-left: 25%;*/
 	vertical-align: middle;
+    text-align: center;
 }
 
 .center {
@@ -42,13 +43,15 @@
 
 /*POUR PLACER UN ELEMENT A DROITE*/
 .IconeRight {
-	float: right;
+    float: right;
+    margin-right: 10px;
+    margin-top: 3px;
 }
 /*POUR PLACER UN ELEMENT A GAUCHE*/
 .IconeLeft {
-	text-align: left;
-	float: left;
-	margin-right: 10px;	
+    float: left;
+    margin-left: 10px;
+    margin-top: 3px;
 }
 
 .case {
