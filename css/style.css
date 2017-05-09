@@ -1,17 +1,51 @@
+/*Aligner l'image avec le texte*/
 img {
 	vertical-align: middle;
 }
 
+/*Mise en forme des label*/
 label {
 	color: #A9A9A9;
 	line-height: 35px
 }
 
+/*Mise en forme du bouton déconnecter dans le menu*/ 
 #btnDeco {
 	width: 60%;
 	left : 50px;
 	margin: 0 auto;
     float: none;
+}
+
+/*Mise en forme de l'image de profil*/
+#avatar {
+	margin-top: -160px;
+	margin-left: 5px;
+	position: relative;
+}
+
+/*Centrer les textes*/
+.center {
+	text-align: center;
+}
+
+/*Placer une icone ou image à droite*/
+.iconeRight {
+	float: right;
+}
+
+/*Placer une icone ou image à gauche*/
+.iconeLeft {
+	text-align: left;
+	float: left;
+	margin-right: 10px;	
+}
+
+/*Mise en forme du titre de l'en-tête*/
+.title {
+	color: #A9A9A9 !important;
+	font-size: 25px !important;
+	vertical-align: middle !important;
 }
 
 
@@ -38,22 +72,14 @@ label {
 /****************************************************************************
 						SURCHARGE JQUERY MOBILE
 ****************************************************************************/
-.ui-header, .ui-footer {
-    border-width: 0;
-    border-style: none;
-}
-
-.ui-panel-wrapper, .ui-bar-inherit, .ui-content {
-    background-color: #f9f9f9 !important;
-}
-
-.ui-panel-inner, .ui-content {
-	padding: 0;
-}
-
 [data-role=panel]{
 	opacity: 0.9;
 	width: 272px !important;
+}
+
+[data-role=main]{
+	color: #A9A9A9;
+	font-size: 15px;
 }
 
 [data-role=footer] > button {
@@ -63,41 +89,45 @@ label {
 	left : 0;
 	bottom: 0;
 }
-/*.nav{
-	position: absolute
-	bottom: 0;
-	left: 0;
-	right: 0;
-	height: 60px;
-	line-height: 60px;
-	text-align: center;
-	background-color: #FF8F35;
+
+textarea.ui-input-text {
+    overflow: auto;
+    resize: none;
 }
 
-.nav a{
-	display: block;
-	width: 50%;
-	float: left;
+.ui-header, .ui-footer {
+    border-width: 0 !important;
+    border-style: none !important;
 }
 
-.panel{
-	position: absolute;
-	top: 0;
-	left: 2px;
-	right: 2px;
-	bottom: 0;
-	overflow-x: hidden;
-	overflow-y: scroll;
+.ui-panel-wrapper, .ui-bar-inherit, .ui-content {
+    background-color: #f9f9f9 !important;
 }
 
-.left{
-	transform: translate3d(-100%,0,0);
+.ui-panel-inner, .ui-content {
+	padding: 0 !important;
 }
 
-.center{
-	transform: translate3d(0,0,0);
+
+.ui-input-text, .ui-input-search {
+    margin: 0;
+    border-width: 0;
+    border-style: none;
+    background-color: #fff;
 }
 
-.right{
-	transform: translate3d(100%,0,0);
-}*/
+.ui-input-text input, .ui-input-search input {
+    margin: 0;
+    min-height: 2.2em;
+    text-align: left;
+    border: 0;
+    background: #fff none;
+    -webkit-appearance: none;
+    -webkit-border-radius: inherit;
+    border-radius: inherit;
+}
+
+.ui-header, .ui-footer {
+    border-width: 0;
+    border-style: none;
+}

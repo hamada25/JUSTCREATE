@@ -1,0 +1,48 @@
+/*POUR METTRE LES GLYPHICON DANS UN INPUT A GAUCHE*/
+.has-feedback-left input.form-control{
+	padding-left: 34px;
+	padding-right: 12px;
+}
+.form-control-feedback {
+	height: 25px;
+	width: 25px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.form-control-feedback.left{
+	left: 0;
+}
+
+.form-control-feedback.right{
+	right: 0;
+}
+/*MISE EN PAGE DU INPUT DE RECHERCHE*/
+.form-group {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.case {
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	width: 50%;
+}
+
+.cote {
+	border-right: 1px solid #F9A448;	
+}
+
+/*AFFICHAGE DU TRAI ORANGE*/
+.border{
+	border-bottom: 3px solid #F9A448;
+  	color: #F9A448;
+}
+
+/*AFFICHAGE DE LA GALEIR*/
+.affichage{
+	margin:10px;
+	padding-top:30px;
+
+}
