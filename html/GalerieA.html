@@ -3,39 +3,84 @@
     <head>
         <meta charset="utf-8"/>
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, target-densitydpi=device-dpi"/>
+        
+        <link rel="stylesheet" type="text/css" href="../css/jquery.mobile-1.4.5.css" /> 
         <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css" />
-        <link rel="stylesheet" type="text/css" href="../css/style.css" />
         <link rel="stylesheet" type="text/css" href="../css/GalerieA.css" />
+        <link rel="stylesheet" type="text/css" href="../css/style.css" />
+
+        <script src="../js/jquery-3.2.1.js"></script> 
+        <script src="../js/jquery-migrate-3.0.0.js"></script>
+        <script src="../js/jquery.mobile-1.4.5.js"></script>
+        <script src="../bootstrap/js/bootstrap.js"></script>
         <script type="text/javascript" src="../js/GalerieA.js"></script>
-        <script type="text/javascript" src="../bootstrap/js/bootstrap.js"></script>
     </head>
-    <body>
-        <!--theme des icones menu, mail, barre de recherche, titre... -->
-        <div class="theme1">
-            <span class="IconeLeft glyphicon glyphicon-menu-hamburger"></span>
-            <span class="titre">JustCreate</span>
-            <div class="IconeRight glyphicon glyphicon-search"></div> <!--Bizarrement placé-->
-            <div class="IconeRight glyphicon glyphicon-envelope"></div>
-        </div>
-        <!-- Barre de recherche -->
-        <form role="form"> 
-          <div class="form-group has-feedback has-feedback-left">
-            <input type="text" class="form-control" placeholder="Que recherchez-vous ?"/>
-            <i class="form-control-feedback glyphicon glyphicon-search"></i>
-          </div>
-        </form>
-        <!-- Choix du trie -->
-        <div style="text-align: center;" class="theme2">
-            <span id="tri1" onclick="changerClass(id, 'affichage1');" class="border" style="float:left;">Tout le monde</span>
-            <span id="tri2" onclick="changerClass(id, 'affichage2');" >Par thèmes</span>
-            <span id="tri3" onclick="changerClass(id, 'affichage3');" style="float: right;">Mes abonnements</span>
-        </div>
-        <!-- Affichage après le choix du trie -->
-        <div class="affichage">
-            <div id="affichage1" >Tout le monde</div>
-            <div id="affichage2" class="hidden">Par thème</div>
-            <div id="affichage3" class="hidden">MesAbonnement</div>
+    <body data-role="page" class="container">
+
+        <div data-role="panel" id="menu" data-display="overlay">
+            <svg width="400" height="180">
+                <rect x="0" y="0" width="272" height="160" style="fill:#FFB049;fill-opacity:1" />
+            </svg>
+             <section class="container">
+                <div class="row">
+                    <label><img src="../images/profil.png" alt="Menu" height="35" width="35" i class="IconeLeft"/>Mon profil</label>
+                </div>
+                <div class="row">
+                    <label><img src="../images/ttscreations.png" alt="Menu" height="35" width="35" i class="IconeLeft"/>Toutes mes créations</label>
+                </div>
+                <div class="row">
+                    <label><img src="../images/atelier.png" alt="Menu" height="35" width="35" i class="IconeLeft"/>Mon atelier tuto</label>
+                </div>
+                <div class="row">
+                    <label><img src="../images/messagerie.png" alt="Menu" height="35" width="35" i class="IconeLeft"/>Ma messagerie</label>
+                </div>
+                <div class="row">
+                    <label><img src="../images/coeur.png" alt="Menu" height="35" width="35" i class="IconeLeft"/>Mes coups de coeur</label>
+                </div>
+                <div class="row">
+                    <label><img src="../images/parametres.png" alt="Menu" height="35" width="35" i class="IconeLeft"/>Paramètres</label>
+                </div>
+                <div class="row">
+                    <button id="btnDeco" class="btn btn-default" onclick="window.location.href='../index.html'">Me déconnecter</button>
+                </div>
+            </section>
         </div>
 
+        <!--theme des icones menu, mail, barre de recherche, titre... -->
+        <section data-role="header">
+            <div class="row">
+                <a href="#menu"><img src="../images/menu.png" alt="Menu" height="35" width="35" i class="IconeLeft"/></a>
+                <span class="title">JustCreate</span>
+                <a href="#"><img src="../images/rechercher.png" height="35" width="35" i class="IconeRight"/></a>
+                <a href="#"><img src="../images/messagerie.png" height="35" width="35" i class="IconeRight"/></a>
+            </div>
+            <!-- Barre de recherche -->
+            <form role="form"> 
+              <div class="form-group has-feedback has-feedback-left">
+                <input type="text" class="form-control" placeholder="Que recherchez-vous ?"/>
+                <img src="../images/rechercher.png" class="form-control-feedback left">
+                <img src="../images/micro.png" class="form-control-feedback right">
+              </div>
+            </form>
+        </section>
+
+        <section data-role="main" class="ui-content">
+            <!-- Choix du tri -->
+            <div class="center">
+                <span id="tri1" onclick="changerClass(id, 'affichage1');" class="border cote case" style="float:left;">Tout le monde</span>
+                <span id="tri2" onclick="changerClass(id, 'affichage2');" class="cote case">Par thèmes</span>
+                <span id="tri3" onclick="changerClass(id, 'affichage3');" class="case" style="float: right;">Mes abonnements</span>
+            </div>
+            <!-- Affichage après le choix du trie -->
+            <div class="affichage">
+                <div id="affichage1" >Tout le monde</div>
+                <div id="affichage2" class="hidden">Par thème</div>
+                <div id="affichage3" class="hidden">Mes Abonnement</div>
+            </div>
+        </section>
+
+        <section data-role="footer">
+            <button class="btn btn-default">Promouvoir votre création</button>
+        </section>
     </body>
  </html>

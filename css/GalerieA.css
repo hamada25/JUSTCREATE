@@ -1,58 +1,72 @@
 /*theme des icones menu, mail, barre de recherche, titre...*/
-.theme1{
-	color: #777;
-	font-size: 20px;
+.title {
+	color: #A9A9A9;
+	font-size: 25px;
+	margin-left: 25%;
+	vertical-align: middle;
+}
+
+.center {
 	text-align: center;
 }
-.titre{
-	font-size: 25px;
+
+[data-role=main]{
+	color: #A9A9A9;
+	font-size: 15px;
 }
-.theme2{
-	margin: 10px;
-	color: #999;
-}
+
 /*POUR METTRE LES GLYPHICON DANS UN INPUT A GAUCHE*/
 .has-feedback-left input.form-control{
 	padding-left: 34px;
 	padding-right: 12px;
 }
-.has-feedback-left .form-control-feedback{
+.form-control-feedback {
+	height: 25px;
+	width: 25px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.form-control-feedback.left{
 	left: 0;
-	line-height: 34px;
+}
+
+.form-control-feedback.right{
+	right: 0;
 }
 /*MISE EN PAGE DU INPUT DE RECHERCHE*/
 .form-group {
 	margin-left: 10px;
 	margin-right: 10px;
 }
-.form{
-	margin: 10px;
-}
+
 /*POUR PLACER UN ELEMENT A DROITE*/
 .IconeRight {
-	text-align: right;
 	float: right;
-	margin:10px;
 }
 /*POUR PLACER UN ELEMENT A GAUCHE*/
 .IconeLeft {
 	text-align: left;
 	float: left;
-	margin: 10px;
+	margin-right: 10px;	
 }
-/*POUR PLACER UN ELEMENT AU CENTRE*/
-.IconeCenter{
-	text-align: center;
-	float: inherit;
-	margin: 10px;
+
+.case {
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
 }
+
+.cote {
+	border-right: 1px solid #F9A448;	
+}
+
 /*AFFICHAGE DU TRAI ORANGE*/
 .border{
-	padding-bottom: 10px;
-	border-bottom: 3px solid;
-  	border-color: #F9A448;
+	border-bottom: 3px solid #F9A448;
   	color: #F9A448;
 }
+
 /*AFFICHAGE DE LA GALEIR*/
 .affichage{
 	margin:10px;

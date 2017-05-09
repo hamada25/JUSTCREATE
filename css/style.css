@@ -1,22 +1,70 @@
+img {
+	vertical-align: middle;
+}
+
+label {
+	color: #A9A9A9;
+	line-height: 35px
+}
+
+#btnDeco {
+	width: 60%;
+	left : 50px;
+	margin: 0 auto;
+    float: none;
+}
+
+
 /****************************************************************************
 							SURCHARGE BOOTSTRAP
 ****************************************************************************/
 .btn-default{
-	color: #FFFFFF;
-  	background-color: #F9A448;
+	color: #FFFFFF !important;
+  	background-color: #F9A448 !important;
+  	border-radius: 8px !important;
+  	text-shadow: none !important;
 }
 
 .btn-default:focus, .btn-default:active, .btn-default:hover{
 	color: #FFFFFF;
-  	background-color: #FF961E;
+  	background-color: #FFB049;
 }
 
 .row {
 	margin-bottom: 15px;
 }
 
+
+/****************************************************************************
+						SURCHARGE JQUERY MOBILE
+****************************************************************************/
+.ui-header, .ui-footer {
+    border-width: 0;
+    border-style: none;
+}
+
+.ui-panel-wrapper, .ui-bar-inherit, .ui-content {
+    background-color: #f9f9f9 !important;
+}
+
+.ui-panel-inner, .ui-content {
+	padding: 0;
+}
+
+[data-role=panel]{
+	opacity: 0.9;
+	width: 272px !important;
+}
+
+[data-role=footer] > button {
+	width: 100% !important;
+	font-size: 20px !important;
+	position: fixed;
+	left : 0;
+	bottom: 0;
+}
 /*.nav{
-	position: absolute;
+	position: absolute
 	bottom: 0;
 	left: 0;
 	right: 0;

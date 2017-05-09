@@ -1,20 +1,57 @@
 <!DOCTYPE html>
 <html>
-    <head>
+   <head>
         <meta charset="utf-8"/>
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, target-densitydpi=device-dpi" />
         
-        <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-        <link rel="stylesheet" type="text/css" href="css/style.css" />
-        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css" />
+        <link rel="stylesheet" type="text/css" href="../css/jquery.mobile-1.4.5.css" />
+        <link rel="stylesheet" type="text/css" href="../css/style.css" />
+        <link rel="stylesheet" type="text/css" href="../css/GalerieV.css" />
 
-        <script src="js/bootstrap.js"></script>
-        <script src="js/jquery.mobile-1.4.5.js"></script> 
-        <script src="js/index.js"></script>
+        <script src="../js/jquery-3.2.1.js"></script> 
+        <script src="../js/jquery.mobile-1.4.5.js"></script> 
+        <script src="../bootstrap/js/bootstrap.js"></script>
+        <script src="../js/GalerieV.js"></script>
 
         <title>JustCreate</title>
     </head>
-    <body class="container">
-        <h1 class="title">JustCreate</h1>
+    <body data-role="page">
+         <section class="menu">
+            <svg width="400" height="180">
+                <rect x="0" y="0" width="300" height="180" style="fill:#FFB049;fill-opacity:1" />
+            </svg>
+             <section class="container">
+                <div class="row">
+                    <label>Mon profil</label>
+                </div>
+                <div class="row">
+                    <label>Toutes mes créations</label>
+                </div>
+                <div class="row">
+                    <label>Mon atelier tuto</label>
+                </div>
+                <div class="row">
+                    <label>Ma messagerie</label>
+                </div>
+                <div class="row">
+                    <label>Mes coups de coeur</label>
+                </div>
+                <div class="row">
+                    <label>Paramètres</label>
+                </div>
+                <div class="row">
+                    <button>Me déconnecter</button>
+                </div>
+            </section>
+        </section>
+        <section class="page">
+            <div class="theme1">
+                <a href="#"><span class="IconeLeft glyphicon glyphicon-menu-hamburger"></span></a>
+                <span class="titre">JustCreate</span>
+                <div class="IconeRight glyphicon glyphicon-search"></div> <!--Bizarrement placé-->
+                <div class="IconeRight glyphicon glyphicon-envelope"></div>
+            </div>
+        </section>
     </body> 
 </html>
