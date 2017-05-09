@@ -1,0 +1,43 @@
+ <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, target-densitydpi=device-dpi" />
+        
+        <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css" />
+        <link rel="stylesheet" type="text/css" href="../css/jquery.mobile-1.4.5.css" />
+        <link rel="stylesheet" type="text/css" href="../css/style.css" />
+        <link rel="stylesheet" type="text/css" href="../css/Connexion.css" />
+
+        <script src="../js/jquery-3.2.1.js"></script> 
+        <script src="../js/jquery.mobile-1.4.5.js"></script> 
+        <script src="../bootstrap/js/bootstrap.js"></script>
+        <script src="../js/Connexion.js"></script>
+
+        <title>JustCreate</title>
+    </head>
+    <body class="container" data-page="page">
+        <h1 data-role="header">Se connecter</h1>
+
+        <section data-role="main" class="ui-content">
+            <div class="row">
+                <button id="btnConnecterFB" class="btn btn-default" onclick="window.location.href='GalerieA.html';">Se connecter avec Facebook</button>
+            </div>
+            <label class="row">ou</label>
+            <div class="row">
+                <button id="btnConnecterG" class="btn btn-default" onclick="window.location.href='GalerieA.html';">Se connecter avec Google +</button>
+            </div>
+            <label class="row">ou</label>
+            <div class="row">
+                <input type="text" id="pseudo" class="form-control" placeholder="Pseudo ou email"/>
+            </div>
+            <div class="row">
+                <input type="password" id="pwd" class="form-control" placeholder="Mot de passe"/>
+            </div>
+            <div class="">
+                <a href="#" onclick="cancelConnection();"><span style="color:red;" class="glyphicon glyphicon-remove"></span></a>
+                <a href="GalerieA.html"><span style="color:green;" class="glyphicon glyphicon-ok"></span></a>
+            </div>
+        </section>
+    </body>
+</html>
