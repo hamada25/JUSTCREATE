@@ -1,8 +1,91 @@
-.menu {
-	left : -400px;
+/*theme des icones menu, mail, barre de recherche, titre...*/
+.title {
+	color: #A9A9A9;
+	font-size: 25px;
+	margin-left: 25%;
+	vertical-align: middle;
 }
 
-.page {
-	left : 0px;
-	top: 0;
+.center {
+	text-align: center;
+}
+
+[data-role=main]{
+	color: #A9A9A9;
+	font-size: 15px;
+}
+
+/*POUR METTRE LES GLYPHICON DANS UN INPUT A GAUCHE*/
+.has-feedback-left input.form-control{
+	padding-left: 34px;
+	padding-right: 12px;
+}
+.form-control-feedback {
+	height: 25px;
+	width: 25px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.form-control-feedback.left{
+	left: 0;
+}
+
+.form-control-feedback.right{
+	right: 0;
+}
+/*MISE EN PAGE DU INPUT DE RECHERCHE*/
+.form-group {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+/*POUR PLACER UN ELEMENT A DROITE*/
+.IconeRight {
+	float: right;
+}
+/*POUR PLACER UN ELEMENT A GAUCHE*/
+.IconeLeft {
+	text-align: left;
+	float: left;
+	margin-right: 10px;
+}
+
+.case {
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+}
+
+.cote {
+	border-right: 1px solid #F9A448;
+}
+
+/*AFFICHAGE DU TRAI ORANGE*/
+.border{
+	border-bottom: 3px solid #F9A448;
+  	color: #F9A448;
+}
+
+/*AFFICHAGE DE LA GALEIR*/
+.affichage{
+	margin:10px;
+	margin-top:20px;
+
+}
+
+.img{
+	width: 34%;
+  margin-left: 12px;
+  margin-top: -238px;
+}
+
+.valeur{
+	  margin-left: 12px;
+}
+
+.visiteur {
+	color: #808080;
+	margin-left: 3%;
+	margin-top: -37%;
 }
