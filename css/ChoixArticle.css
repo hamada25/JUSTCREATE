@@ -1,0 +1,34 @@
+.btnChoixArticle{
+	margin: 30px;
+	padding: 100px;
+	background-color: #F9A448;
+	text-align: center;
+	font-size:24px;
+	color: #fff;
+	border-radius:10%;
+	box-shadow: 0px 5px 5px #656565;
+}
+/*theme des icones menu, mail, barre de recherche, titre...*/
+.theme1{
+    color: #777;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.titre{
+    font-size: 25px;
+}/*POUR PLACER UN ELEMENT A DROITE*/
+.IconeRight {
+    text-align: right;
+    float: right;
+    margin:10px;
+}
+/*POUR PLACER UN ELEMENT A GAUCHE*/
+.IconeLeft {
+    text-align: left;
+    float: left;
+    margin: 10px;
+}
+a{
+    color: #777;
+}
