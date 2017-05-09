@@ -12,31 +12,35 @@
 .IconeRight {
     text-align: right;
     float: right;
-    margin:10px;
+    margin-right: 10px;
+    margin-top: 3px;
 }
 /*POUR PLACER UN ELEMENT A GAUCHE*/
 .IconeLeft {
     text-align: left;
     float: left;
-    margin: 10px;
+    margin-left: 10px;
+    margin-top: 3px;
 }
 .BtnEnregistrer{
     background-color: #FF961E;
     bottom: 0;
-    float: left;
-    position: relative;
+    left: 0;
+    position: fixed;
     text-align: center;
     padding:10px;
     color: #FFF;
+    margin-right: 5px;
 }
 .BtnEnregistrerPublier{
     background-color: #FF961E;
     bottom: 0;
-    float: right;
-    position: relative;
+    right:0;
+    position: fixed;
     text-align: center;
     padding:10px;
     color: #FFF;
+    margin-left: 5px;
 }
 a{
     color: #777;
