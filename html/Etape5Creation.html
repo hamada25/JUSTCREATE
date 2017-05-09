@@ -3,32 +3,48 @@
     <head>
         <meta charset="utf-8"/>
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, target-densitydpi=device-dpi"/>
+        
+        <link rel="stylesheet" type="text/css" href="../css/jquery.mobile-1.4.5.css" /> 
         <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css" />
-        <!--<link rel="stylesheet" type="text/css" href="../css/style.css" />-->
+        <link rel="stylesheet" type="text/css" href="../css/style.css" />
         <link rel="stylesheet" type="text/css" href="../css/Etape5Creation.css" />
+        
         <script src="../js/jquery-3.2.1.js"></script> 
+        <script src="../js/jquery-migrate-3.0.0.js"></script>
+        <script src="../js/jquery.mobile-1.4.5.js"></script>
         <script src="../bootstrap/js/bootstrap.js"></script>
     </head>
-    <body>
-        <div class="theme1">
-            <img class="IconeLeft" src="../img/fleche.png" width="30px" onclick="window.location.href='../html/Etape2Creation.html';" />
-            <a class="titre">JustCreate</a>
-            <img class="IconeRight" src="../img/recherche.png" width="30px" />
-            <img class="IconeRight" src="../img/messagerie.png" width="30px" />
-        </div>
-        <div>Image</div>
-        <div>Titre</div>
-        <div>Description</div>
-        <div>Voulez vous vendre cette création ? Mettez votre prix !</div>
-        <input class="col-xs-12" type="text"/>
-        <div class="col-xs-11">
-            <div class="BtnEnregistrer col-xs-6" onclick="alert('ok');"> 
-                Enregistrer
+    <body data-role="page" class="container">
+
+        <section data-role="header">
+            <div class="row">
+                <div class="theme1">
+                    <img class="iconeLeft" src="../images/fleche.png" width="35px" onclick="window.location.href='../html/Etape2Creation.html';" />
+                    <span class="title" onclick="window.location.href='../html/GalerieA.html';">JustCreate</span>
+                    <img class="iconeRight" src="../images/rechercher.png" width="35px" />
+                    <img class="iconeRight" src="../images/messagerie.png" width="35px" />
+                </div>
             </div>
-            <div class="BtnEnregistrerPublier col-xs-6" onclick="alert('ok');"> 
-                Enregistrer et publier
+        </section>
+
+        <section data-role="main" class="form-group ui-content">
+            <img src="../images/Jardinage.png" width="100%" ></img>
+            <h3>Titre</h3>
+            <div>Description</div>
+            <div>Voulez vous vendre cette création ? Mettez votre prix !</div>
+            <input class="col-xs-12" type="text"/>
+        </section>
+
+        <section data-role="footer">
+            <div class="col-xs-11">
+                <div class="btnEnregistrer col-xs-6" onclick="alert('ok');"> 
+                    Enregistrer
+                </div>
+                <div class="btnEnregistrerPublier col-xs-6" onclick="alert('ok');"> 
+                    Enregistrer et publier
+                </div>
             </div>
-        </div>
-        
+        </section>
+
     </body>
  </html>

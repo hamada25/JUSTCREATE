@@ -3,33 +3,48 @@
     <head>
         <meta charset="utf-8"/>
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, target-densitydpi=device-dpi"/>
+
+        <link rel="stylesheet" type="text/css" href="../css/jquery.mobile-1.4.5.css" /> 
         <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css" />
         <link rel="stylesheet" type="text/css" href="../css/style.css" />
         <link rel="stylesheet" type="text/css" href="../css/Etape2Creation.css" />
-        <link rel="stylesheet" type="text/css" href="../css/ChoixArticle.css" />
+
         <script src="../js/Etape1Creation.js"></script>
         <script src="../js/jquery-3.2.1.js"></script> 
+        <script src="../js/jquery-migrate-3.0.0.js"></script>
+        <script src="../js/jquery.mobile-1.4.5.js"></script>
         <script src="../bootstrap/js/bootstrap.js"></script>
     </head>
-    <body>
-    <div class="theme1">
-            <img class="IconeLeft" src="../img/fleche.png" width="30px" onclick="window.location.href='../html/Etape1Creation.html';" />
-            <a class="titre">JustCreate</a>
-            <img class="IconeRight" src="../img/recherche.png" width="30px" />
-            <img class="IconeRight" src="../img/messagerie.png" width="30px" />
-        </div>
-     
-    <div class="col-xs-10 btnChoixFichier">
-            <div>Importer vos images / vidéo</div>
-        </div>
+    <body data-role="page" class="container">
+    
+        <section data-role="header">
+            <div class="row">
+                <div class="theme1">
+                    <img class="iconeLeft" src="../images/fleche.png" width="35px" onclick="window.location.href='../html/Etape1Creation.html';" />
+                    <span class="title" onclick="window.location.href='../html/GalerieA.html';">JustCreate</span>
+                    <img class="iconeRight" src="../images/rechercher.png" width="35px" />
+                    <img class="iconeRight" src="../images/messagerie.png" width="35px" />
+                </div>
+            </div>
+        </section>
+         
 
-    <div class="col-xs-10 btnChoixFichier">
-    <div>Prendre une photo / vidéo</div>
-    </div>
+        <section data-role="main" class="form-group ui-content">
+            <form role="form"> 
+                <div class="col-xs-10 btnChoixFichier">
+                    <div>Importer vos images / vidéo</div>
+                </div>
 
-    <div class="BtnContinuer col-xs-12" onclick="window.location.href='../html/Etape5Creation.html';"> 
-        Continuer
-    </div>
-        
+                <div class="col-xs-10 btnChoixFichier">
+                    <div>Prendre une photo / vidéo</div>
+                </div>
+            </form>
+        </section>
+
+        <section data-role="footer">
+            <div class="btnContinuer col-xs-12" onclick="window.location.href='../html/Etape5Creation.html';"> 
+                Continuer
+            </div>
+        </section>     
     </body>
  </html>
