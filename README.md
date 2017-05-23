@@ -1,2 +1,0 @@
-# JUSTCREATE
-PROJET annuel du L3M2i
